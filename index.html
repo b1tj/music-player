@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="asset/css/style.css" />
+        <title>Music</title>
+    </head>
+    <body>
+        <div class="player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Now Playing:</h4>
+                    <h2>String 57th & 9th</h2>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div
+                        class="cd-thumb"
+                        style="background-image: url('https://i.ytimg.com/vi/29POpanCwOo/maxresdefault.jpg')"
+                    ></div>
+                </div>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                    <div class="btn btn-backward-step">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-play icon-play"></i>
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                    </div>
+                    <div class="btn btn-forward-step">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn btn-shuffle">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+
+                <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100" />
+
+                <audio src="" id="audio"></audio>
+            </div>
+            <!-- Playlist -->
+            <div class="playlist">
+                
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
