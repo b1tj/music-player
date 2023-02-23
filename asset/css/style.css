@@ -10,8 +10,14 @@ body {
     align-items: center;
 }
 
-.btn.active {
-    color: #f84242;
+/* Css general */
+.white {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.btn.active i{
+    color: #f84242 !important;
 }
 
 .song.active {
@@ -53,6 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
     background-image: linear-gradient( 180deg, rgba(2, 95, 138, 0.5), rgba(0, 0, 0, 1));
 }
 
@@ -108,6 +115,11 @@ header h4 {
     color: #fff;
     border-radius: 50%;
     position: relative;
+}
+
+.control .btn-backward-step,
+.control .btn-forward-step {
+    color: #fff
 }
 
 .controls .btn-toggle-play .icon-play,
