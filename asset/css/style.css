@@ -28,23 +28,23 @@ body {
     max-width: 480px;
     display: flex;
     flex-direction: column;
+    background-color: #000;
 }
 
 .player .icon-pause {
     display: none;
 }
 
-.player.playing .icon-pause{
+.player.playing .icon-pause {
     display: block;
 }
 
-.player.playing .icon-play{
+.player.playing .icon-play {
     display: none;
 }
 
 .dashboard {
     padding: 16px 16px 14px;
-    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient( 180deg, rgba(2, 95, 138, 0.5), rgba(0, 0, 0, 0.1));
 }
 
 header {
@@ -62,7 +63,7 @@ header {
 }
 
 header h4 {
-    color: #f84242
+    color: #f84242;
 }
 
 .cd {
@@ -116,21 +117,21 @@ header h4 {
 }
 
 .progress {
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-  cursor: pointer;
-  width: 15rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
 }
 
 .progress::-webkit-slider-runnable-track {
-  background: #e4e3e3;
-  height: 0.5rem;
-  border-radius: 5px;
+    background: #e4e3e3;
+    height: 0.5rem;
+    border-radius: 5px;
 }
 
 .progress::-webkit-slider-thumb {
-    -webkit-appearance: none;  
+    -webkit-appearance: none;
     width: 3%;
     height: 100%;
     background-color: #f06a11;
@@ -141,12 +142,11 @@ header h4 {
     width: 100%;
 }
 
-
 /* Playlist */
 .playlist {
     margin-top: 420px;
     padding: 12px;
-    background: #ebebeb;
+    background: rgba(0, 0, 0, 1);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -159,10 +159,20 @@ header h4 {
     display: flex;
     justify-content: space-between;
     padding: 12px 12px;
-    background: #fafafa;
-    box-shadow: 2px 2px 4px#ccc;
+    background: rgba(56, 56, 56, 0.9);
+    /* box-shadow: 2px 2px 4px#ccc; */
     border-radius: 5px;
     margin-bottom: 12px;
+}
+
+.song .body,
+.song .option {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.song .body .author {
+    color: #ccc;
 }
 
 .playlist .song:active {
@@ -176,7 +186,7 @@ header h4 {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 50%;
-    background:50% 50% no-repeat;
+    background: 50% 50% no-repeat;
     background-size: cover;
 }
 
@@ -185,7 +195,7 @@ header h4 {
     margin-left: 20px;
 }
 
-.playlist .option i{
+.playlist .option i {
     line-height: 40px;
     font-size: 24px;
 }
